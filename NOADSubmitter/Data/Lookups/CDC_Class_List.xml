@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CDC_Classes>
+	<CDC_Class>
+		<Description>A Liquid Material of Division 6.1 'Poisonous Material'</Description>
+		<Code>E</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>All Bulk Liquefied Gas Cargo</Description>
+		<Code>G</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Acetone Cyanohydrin</Description>
+		<Code>H</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Allyl Alcohol</Description>
+		<Code>I</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Chlorosulfonic Acid</Description>
+		<Code>J</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Crotonaldehyde</Description>
+		<Code>K</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Ethylene Chlorohydrin</Description>
+		<Code>L</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Ethylene Dibromide</Description>
+		<Code>M</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Methacrylonitrile</Description>
+		<Code>N</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Oleum (Fuming Sulfuric Acid)</Description>
+		<Code>O</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Liquid Propylene Oxide, Alone or Mixed with Ethylene Oxide</Description>
+		<Code>P</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Solid Ammonium Nitrate</Description>
+		<Code>Q</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Bulk Solid Ammonium Nitrate-based Fertilizer</Description>
+		<Code>R</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Class 7 'Highway Route Controlled Quantity' Radioactive Material or 'Fissile material, controlled shipment'</Description>
+		<Code>F</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Division 1.1 or 1.2 Explosives</Description>
+		<Code>A</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Division 1.5D Blasting Agents</Description>
+		<Code>B</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Division 2.3 Poisonous Gas</Description>
+		<Code>C</Code>
+	</CDC_Class>
+	<CDC_Class>
+		<Description>Division 5.1 Oxidizing Materials</Description>
+		<Code>D</Code>
+	</CDC_Class>
+</CDC_Classes>

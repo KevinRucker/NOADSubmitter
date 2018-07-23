@@ -24,6 +24,7 @@ namespace NOADSubmitter.Data.Domain
             output.Add(new XElement("Software_Application_Name", origin.SoftwareApplicationName));
             output.Add(new XElement("Software_Application_Version", origin.SoftwareApplicationVersion.ToString()));
             output.Add(new XElement("Contact", origin.Contact));
+
             return output;
         }
 
@@ -33,6 +34,7 @@ namespace NOADSubmitter.Data.Domain
             output.OrganizationName = origin.Descendants().Single(x => x.Name == "Orgainzation_Name").Value;
             output.SoftwareApplicationName = origin.Descendants().Single(x => x.Name == "Software_Application_Name").Value;
             output.Contact = origin.Descendants().Single(x => x.Name == "Contact").Value;
+
             return output;
         }
     }
