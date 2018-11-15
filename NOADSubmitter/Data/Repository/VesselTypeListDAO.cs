@@ -13,7 +13,7 @@ namespace NOADSubmitter.Data.Repository
             var resource = XDocument.Load(Common.GetEmbeddedResource("NOADSubmitter.Data.Lookups.Vessel_Type_List.xml"));
             var subTypeDAO = new VesselSubTypeListDAO();
             var temp = resource.Root.Descendants("Vessel_Type")
-                .Where(x => x.Element("VesselClassification").Value == vesselClassification.Description);
+                .Where(x => x.Element("VesselClassification").Value.ToLower() == vesselClassification.Description.ToLower());
             foreach(var item in temp)
             {
                 var thisEntry = new VesselTypeListEntry { Description = item.Element("Description").Value };

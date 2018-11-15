@@ -7,13 +7,7 @@ namespace NOADSubmitter.Data.Domain
     {
         public Source Source { get; set; } = new Source();
         public NoticeDetails NoticeDetails { get; set; } = new NoticeDetails();
-        public bool HasChanges
-        {
-            get
-            {
-                return Source.HasChanges;
-            }
-        }
+        public bool HasChanges{ get { return Source.HasChanges; } }
 
         public static explicit operator XDocument(Notice origin)
         {

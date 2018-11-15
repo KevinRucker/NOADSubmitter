@@ -80,6 +80,8 @@
     <Compile Include="Data\Domain\AgencyListLookup.cs" />
     <Compile Include="Data\Domain\CDCClassListEntry.cs" />
     <Compile Include="Data\Domain\CDCClassListLookup.cs" />
+    <Compile Include="Data\Domain\CertBase.cs" />
+    <Compile Include="Data\Domain\CompCert.cs" />
     <Compile Include="Data\Domain\CountryListEntry.cs" />
     <Compile Include="Data\Domain\CountryListLookup.cs" />
     <Compile Include="Data\Domain\CrewTypeListEntry.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="Data\Domain\PortStateListLookup.cs" />
     <Compile Include="Data\Domain\RSOListEntry.cs" />
     <Compile Include="Data\Domain\RSOListLookup.cs" />
+    <Compile Include="Data\Domain\SftyMgmtCert.cs" />
     <Compile Include="Data\Domain\ShipIdTypeListEntry.cs" />
     <Compile Include="Data\Domain\ShipIdTypeListLookup.cs" />
     <Compile Include="Data\Domain\Source.cs" />

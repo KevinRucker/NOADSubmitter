@@ -19,6 +19,19 @@ namespace NOADSubmitter.Utility
             }
         }
 
+        public static string ConvertFromYN(BiStateYN value)
+        {
+            switch(value)
+            {
+                case BiStateYN.Yes:
+                    return "Yes";
+                case BiStateYN.No:
+                    return "No";
+                default:
+                    return string.Empty;
+            }
+        }
+
         public static BiStateTF ConvertToTF(string value)
         {
             switch (value.ToLower())
@@ -29,6 +42,19 @@ namespace NOADSubmitter.Utility
                     return BiStateTF.False;
                 default:
                     return BiStateTF.NoSelection;
+            }
+        }
+
+        public static string ConvertFromTF(BiStateTF value)
+        {
+            switch(value)
+            {
+                case BiStateTF.True:
+                    return "True";
+                case BiStateTF.False:
+                    return "False";
+                default:
+                    return string.Empty;
             }
         }
 

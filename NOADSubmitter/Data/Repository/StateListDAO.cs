@@ -15,7 +15,8 @@ namespace NOADSubmitter.Data.Repository
             var PortResource = XDocument.Load(Common.GetEmbeddedResource("NOADSubmitter.Data.Lookups.Port_State_List.xml"));
             foreach(var item in StateResource.Root.Descendants("State"))
             {
-                var tempPorts = PortResource.Root.Descendants("Port").Where(x => x.Element("State_Name").Value == item.Element("State_Name").Value);
+                var tempPorts = PortResource.Root.Descendants("Port")
+                    .Where(x => x.Element("State_Name").Value == item.Element("State_Name").Value);
                 var Ports = new List<PortListEntry>();
                 foreach(var temp in tempPorts)
                 {

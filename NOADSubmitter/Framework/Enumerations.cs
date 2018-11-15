@@ -48,30 +48,11 @@
         False
     }
 
-    public enum ShipIdType
+    public enum ISMCodeType
     {
-        NoSelection,
-        IMO_Number,
-        Official_Number
-    }
-
-    public enum VesselClassificationType
-    {
-        NoSelection,
-        Barge,
-        Bulk_Carrier,
-        Fishing_Vessel,
-        General_Dry_Cargo_Ship,
-        Miscellaneous_Vessel,
-        Offshore,
-        Passenger_Ship,
-        Recreational,
-        Refrigerated_Cargo__Ship,
-        Research_Ship,
-        Ro__Ro_Cargo_Ship,
-        School_Ship,
-        Tank_Ship,
-        Towing_Vessel,
-        Warship
+        No_Selection,
+        In_Compliance,
+        NOT_In_Compliance,
+        Not_Required_To_Comply
     }
 }

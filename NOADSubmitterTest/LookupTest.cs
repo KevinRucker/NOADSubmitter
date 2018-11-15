@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Diagnostics;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NOADSubmitter.Data.Repository;
 
 namespace NOADSubmitterTest
@@ -59,38 +60,102 @@ namespace NOADSubmitterTest
         [TestMethod]
         public void TestMethod1()
         {
+            var stopwatch = new Stopwatch();
+            var totalWatch = new Stopwatch();
+
+            stopwatch.Start();
+            totalWatch.Start();
             var AgencyLookup = new AgencyListLookupDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Agency List: ");
             Assert.IsNotNull(AgencyLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var CDCClassLookup = new CDCClassListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "CDC Class List: ");
             Assert.IsNotNull(CDCClassLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var CountryLookup = new CountryListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Country List: ");
             Assert.IsNotNull(CountryLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var CrewTypeLookup = new CrewTypeListDAO().FetchLookup();
+            stopwatch.Stop();
+            LogTime(stopwatch, "Crew Type List: ");
             Assert.IsNotNull(CrewTypeLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var ForeignPortLookup = new ForiegnPortListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Foreign Port List: ");
             Assert.IsNotNull(ForeignPortLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var INAExemptionsLookup = new INAExemptionsListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "INA Exemptions List: ");
             Assert.IsNotNull(INAExemptionsLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var InterimISSCLookup = new InterimISSCTypeListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Interim ISSC Type List: ");
             Assert.IsNotNull(InterimISSCLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var PersonIdTypeLookup = new PersonIdTypeDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Person Id Type List: ");
             Assert.IsNotNull(PersonIdTypeLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var StateLookup = new StateListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "State List: ");
             Assert.IsNotNull(StateLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var ShipIdTypeLookup = new ShipIdTypeListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Ship Id Type List: ");
             Assert.IsNotNull(ShipIdTypeLookup);
 
+            stopwatch.Start();
+            totalWatch.Start();
             var VesselClassificationLookup = new VesselClassificationListDAO().FetchLookup();
+            stopwatch.Stop();
+            totalWatch.Stop();
+            LogTime(stopwatch, "Vessel Classification List: ");
+            LogTime(totalWatch, "Total Time: ");
             Assert.IsNotNull(VesselClassificationLookup);
+        }
+
+        private static void LogTime(Stopwatch watch, string description)
+        {
+            System.Console.WriteLine(description + watch.Elapsed.ToString());
+            watch.Reset();
         }
     }
 }
