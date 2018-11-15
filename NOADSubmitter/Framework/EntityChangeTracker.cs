@@ -10,6 +10,10 @@ namespace NOADSubmitter.Framework
         public Dictionary<string, object> NewValues { get; private set; } = new Dictionary<string, object>();
         public bool HasChanges { get; private set; } = default(bool);
 
+        /// <summary>
+        /// Initialize change tracker
+        /// </summary>
+        /// <param name="entity">Entity to track</param>
         public void Initialize(object entity)
         {
             var infos = entity.GetType().GetRuntimeProperties();
